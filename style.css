@@ -1,0 +1,65 @@
+/*
+===============
+Reset CSS
+===============
+*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/*
+======X=========
+Reset CSS
+======X=========
+*/
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: lightblue;
+  box-shadow: 0px 0px 8px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+.magnifier {
+  width: 40px;
+  padding: 4px;
+}
+.input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 200px;
+  transition: width 0.5s;
+}
+
+.mic-icon {
+  width: 40px;
+  padding: 4px;
+  transition: width 0.5s 0.7s;
+}
+
+.active .input {
+  width: 0px;
+}
+.active .mic-icon {
+  width: 0px;
+}
